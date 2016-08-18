@@ -89,7 +89,7 @@ public class DdlTokenizer implements Tokenizer {
         int typeOf(int type, String token);
     }
 
-    private final boolean removeQuotes = true;
+    private final boolean removeQuotes = false;
     private final boolean useComments;
     private final TokenTypeFunction retypingFunction;
 

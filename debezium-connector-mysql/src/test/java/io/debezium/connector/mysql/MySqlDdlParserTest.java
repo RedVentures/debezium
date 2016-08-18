@@ -309,10 +309,10 @@ public class MySqlDdlParserTest {
         Testing.print(tables);
         assertThat(tables.size()).isEqualTo(4);
         assertThat(listener.total()).isEqualTo(10);
-        assertThat(tables.forTable("connector_test_ro",null,"products")).isNotNull();
-        assertThat(tables.forTable("connector_test_ro",null,"products_on_hand")).isNotNull();
-        assertThat(tables.forTable("connector_test_ro",null,"customers")).isNotNull();
-        assertThat(tables.forTable("connector_test_ro",null,"orders")).isNotNull();
+        assertThat(tables.forTable("`connector_test_ro`",null,"`products`")).isNotNull();
+        assertThat(tables.forTable("`connector_test_ro`",null,"`products_on_hand`")).isNotNull();
+        assertThat(tables.forTable("`connector_test_ro`",null,"`customers`")).isNotNull();
+        assertThat(tables.forTable("`connector_test_ro`",null,"`orders`")).isNotNull();
     }
 
     @Test
